@@ -1,0 +1,10 @@
+version = project(':core').version
+
+dependencies 
+{
+	compile project(':core')
+}
+
+jar {
+	appendix = "test"
+}

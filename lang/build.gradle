@@ -1,0 +1,5 @@
+version = furnaceVersion
+
+jar {
+	appendix = "lang"
+}

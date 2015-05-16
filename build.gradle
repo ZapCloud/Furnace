@@ -1,0 +1,10 @@
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+	
+	archivesBaseName = "furnace"
+}
+
+allprojects {
+	group = "com.zapcloudstudios.furnace"
+}

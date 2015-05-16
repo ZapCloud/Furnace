@@ -1,0 +1,3 @@
+include 'lang'
+include 'core'
+include 'test'

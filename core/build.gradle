@@ -1,0 +1,22 @@
+version = "0.0"
+
+repositories 
+{
+	mavenCentral()
+}
+
+dependencies 
+{
+	compile project(':lang')
+	compile 'org.mozilla:rhino:1.7.6'
+	compile 'com.google.guava:guava:18.0'
+	compile 'org.apache.commons:commons-lang3:3.4'
+	
+	testCompile 'junit:junit:4.11'
+	testCompile project(':test')
+}
+
+jar {
+	appendix = "core"
+	version = "${furnaceVersion}-${project.version}"
+}
