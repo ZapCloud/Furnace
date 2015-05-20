@@ -5,6 +5,7 @@ import java.util.EnumMap;
 import com.zapcloudstudios.furnace.lang.annotation.JSGet;
 import com.zapcloudstudios.furnace.lang.annotation.JSNew;
 import com.zapcloudstudios.furnace.lang.annotation.JSNullIsUndef;
+import com.zapcloudstudios.furnace.lang.api.entity.FPlayer;
 import com.zapcloudstudios.furnace.lang.api.event.EventType;
 import com.zapcloudstudios.furnace.lang.api.event.FEventer;
 
@@ -58,8 +59,17 @@ public abstract class FGlobal
 	public abstract String chatFormatting(String id);
 	
 	@JSNew("Builder")
-	public abstract FBuilder newBuilder(FWorld world);
+	public abstract FBuilder newBuilder();
 	
 	@JSNew("Eventer")
 	public abstract FEventer newEventer();
+	
+	@JSNew("ItemStack")
+	public abstract FItemStack newItemStack(FItem item);
+	
+	@JSNew("ItemStack")
+	public abstract FItemStack newItemStack(FItem item, int size);
+	
+	@JSNew("ItemStack")
+	public abstract FItemStack newItemStack(FItem item, int size, int meta);
 }
