@@ -1,9 +1,10 @@
 package com.zapcloudstudios.furnace.lang.api;
 
+import com.zapcloudstudios.furnace.lang.FObject;
 import com.zapcloudstudios.furnace.lang.annotation.JSGet;
 
-public interface FDatable
+public interface FDatable extends FObject
 {
 	@JSGet("data")
-	public <T> T data();
+	public <T extends Cloneable> T data();
 }

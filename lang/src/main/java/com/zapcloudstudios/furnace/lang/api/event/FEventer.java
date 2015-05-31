@@ -1,9 +1,11 @@
 package com.zapcloudstudios.furnace.lang.api.event;
 
 import java.util.ArrayList;
+
+import com.zapcloudstudios.furnace.lang.FObject;
 import com.zapcloudstudios.furnace.lang.annotation.JSFunc;
 
-public abstract class FEventer
+public abstract class FEventer implements FObject
 {
 	public FEventer parent;
 	public EventType event;

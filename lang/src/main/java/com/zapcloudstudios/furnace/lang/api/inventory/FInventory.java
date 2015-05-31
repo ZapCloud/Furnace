@@ -1,6 +1,8 @@
 package com.zapcloudstudios.furnace.lang.api.inventory;
 
-public interface FInventory
+import com.zapcloudstudios.furnace.lang.FObject;
+
+public interface FInventory extends FObject
 {
 	
 }

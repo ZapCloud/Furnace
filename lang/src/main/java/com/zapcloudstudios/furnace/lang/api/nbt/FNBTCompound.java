@@ -1,6 +1,8 @@
 package com.zapcloudstudios.furnace.lang.api.nbt;
 
-public interface FNBTCompound extends FNBTTag
+import com.zapcloudstudios.furnace.lang.FObject;
+
+public interface FNBTCompound extends FNBTTag, FObject
 {
 	
 }

@@ -1,13 +1,16 @@
-package com.zapcloudstudios.furnace.lang.api;
+package com.zapcloudstudios.furnace.lang.api.item;
 
+import com.zapcloudstudios.furnace.lang.FObject;
 import com.zapcloudstudios.furnace.lang.annotation.JSFunc;
 import com.zapcloudstudios.furnace.lang.annotation.JSGet;
 import com.zapcloudstudios.furnace.lang.annotation.JSSet;
 import com.zapcloudstudios.furnace.lang.annotation.JSVar;
+import com.zapcloudstudios.furnace.lang.api.FDatable;
 import com.zapcloudstudios.furnace.lang.api.entity.item.FEntityItem;
 import com.zapcloudstudios.furnace.lang.api.nbt.FNBTCompound;
+import com.zapcloudstudios.furnace.lang.api.world.FWorld;
 
-public abstract class FItemStack implements FDatable
+public abstract class FItemStack implements FDatable, FObject
 {
 	@JSVar("item")
 	public FItem item;
